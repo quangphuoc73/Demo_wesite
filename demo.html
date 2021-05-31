@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        
+        .img {
+            float: left;
+            width: 33.33%;
+            padding: 5px;
+        }
+        
+        .project::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Images Side by Side</h2>
+    <p>Float images side by side:</p>
+
+    <div class="project">
+        <div>
+            <img class="house" src="img/brick_house.jpg" alt="Brick House" style="width: 100%">
+        </div>
+        <div>
+            <img class="house" src="img/betifull_house.jpg" alt="betifull_house" style="width: 100%">
+        </div>
+        <div>
+            <img class="house" src="img/renovated.jpg" alt="renovated" style="width: 100%">
+        </div>
+
+    </div>
+
+    <p>Note that we also use the clearfix hack to take care of the layout flow, and that we add the box-sizing property to make sure that the image container doesn't break due to extra padding. Try to remove this code to see the effect.</p>
+
+</body>
+
+</html>
